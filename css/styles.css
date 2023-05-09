@@ -7,3 +7,15 @@ body {
     margin: 0;
     padding: 0;
 }
+
+#introduccion {
+    text-align: center;
+}
+
+#contenido {
+    text-align: center;
+}
+
+#comenzarBtn {
+    margin-top: 20px;
+}

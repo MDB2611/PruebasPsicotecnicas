@@ -6,16 +6,24 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <h1>Pregunta:</h1>
-    <p id="pregunta"></p>
-    <form id="formulario">
-        <!-- Aquí van los campos del formulario -->
-        <button type="button" onclick="guardarRespuesta(true)">Sí</button>
-        <button type="button" onclick="guardarRespuesta(false)">No</button>
-    </form>
-    <div id="resultados" style="display: none">
-        <h1>Resultado:</h1>
-        <p id="carreras"></p>
+    <div id="introduccion">
+        <h1>Bienvenido/a a la prueba psicotécnica de la Facultad de Ciencias Empresariales de la UPSA</h1>
+        <p>Esta prueba te ayudará a descubrir qué carrera profesional podría ser adecuada para ti.</p>
+        <p>Responde las siguientes preguntas de acuerdo a tus preferencias y habilidades.</p>
+        <button id="comenzarBtn" onclick="comenzarPrueba()">Comenzar</button>
+    </div>
+    <div id="contenido" style="display: none;">
+        <h1>Pregunta:</h1>
+        <p id="pregunta"></p>
+        <form id="formulario">
+            <!-- Aquí van los campos del formulario -->
+            <button type="button" onclick="guardarRespuesta(true)">Sí</button>
+            <button type="button" onclick="guardarRespuesta(false)">No</button>
+        </form>
+        <div id="resultados" style="display: none">
+            <h1>Resultado:</h1>
+            <p id="carreras"></p>
+        </div>
     </div>
     <script src="js/script.js"></script>
 </body>

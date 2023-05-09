@@ -38,6 +38,17 @@ const preguntasAleatorias = shuffle(preguntas);
 let respuestas = [];
 let preguntaActual = 0;
 
+function comenzarPrueba() {
+    const introduccionElement = document.getElementById('introduccion');
+    introduccionElement.style.display = 'none'; // Ocultar la introducción
+
+    const contenidoElement = document.getElementById('contenido');
+    contenidoElement.style.display = 'block'; // Mostrar el contenido de la prueba
+
+    mostrarSiguientePregunta(); // Mostrar la primera pregunta
+}
+
+
 function ocultarFormulario() {
     const formularioElement = document.getElementById('formulario');
     formularioElement.style.display = 'none';
