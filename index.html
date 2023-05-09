@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Preguntas</title>
+</head>
+<body>
+    <h1>Pregunta:</h1>
+    <p id="pregunta"></p>
+    <form id="formulario">
+        <!-- Aquí van los campos del formulario -->
+        <button type="button" onclick="guardarRespuesta(true)">Sí</button>
+        <button type="button" onclick="guardarRespuesta(false)">No</button>
+    </form>
+    <div id="resultados" style="display: none">
+        <h1>Resultado:</h1>
+        <p id="carreras"></p>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
